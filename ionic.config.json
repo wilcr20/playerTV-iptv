@@ -1,0 +1,7 @@
+{
+  "name": "playerTV-iptv",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
