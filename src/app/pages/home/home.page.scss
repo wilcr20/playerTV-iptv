@@ -1,60 +1,65 @@
 .main {
-    margin: 2em 1em;
-    border: 1px solid orange;
-    padding: 25px 5px;
+  margin: 2em 1em;
+  border: 1px solid orange;
+  padding: 25px 5px;
 
-    .addChannel {
-        width: 33%;
-        background: green;
-        height: 40px;
+  .addChannel {
+    width: 33%;
+    background: green;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: math;
+    border-radius: 15px;
+  }
+
+  .channelList {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 0fr));
+    display: grid;
+    margin: 10px;
+
+    ion-card {
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 15px;
+      background: black;
+      min-height: 235px;
+      max-height: 235px;
+      border: 3px solid gray;
+
+      &:focus {
+        border: 5px solid orange;
+
+        ion-card-title {
+          color: orange;
+        }
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      img {
+        width: 60%;
+        font-size: 1.10rem;
+      }
+
+      ion-card-title {
         color: white;
-        font-size: 20px;
-        font-family: math;
-        border-radius: 15px;
-    }
+        font-family: sans-serif;
+        font-size: 1.10rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: fixed;
+        padding: 5px;
+        right: 0;
+        bottom: 20px;
+        left: 0;
+      }
 
-    .channelList {
-        grid-template-columns: repeat(auto-fit, minmax(225px, 0fr));
-        display: grid;
-        margin: 10px;
-        ion-card {
-            text-align: center;
-            padding-top: 10px;
-            border-radius: 15px;
-            background: black;
-            min-height: 270px;
-            max-height: 270px;
-            border: 3px solid gray;
-      
-            &:focus {
-              border: 5px solid orange;
-      
-              ion-card-title {
-                color: orange;
-              }
-            }
-      
-            &:focus-visible {
-              outline: none;
-            }
-      
-            img {
-              width: 65%;
-              font-size: 1.10rem;
-            }
-      
-            ion-card-title {
-              color: white;
-              font-family: sans-serif;
-              font-size: 1.10rem;
-              margin-top: -0.5em;
-              display: -webkit-box;
-              -webkit-line-clamp: 3;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            }
-      
-          }
     }
+  }
 }

@@ -15,7 +15,6 @@ export class PlayerPage implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: { [x: string]: any; }) => {
       this.iframeUrl = params['url']; // (+) converts string 'id' to a number
-      console.log(this.iframeUrl);
       document.getElementById("iframe")?.focus()  
     });
   }

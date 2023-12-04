@@ -4,7 +4,10 @@
     <button class="addChannel" *ngIf="isLocalDev">Añadir canal</button>
     <br><br>
     <div class="channelList">
-      <ion-card tabindex="0" (keyup.enter)="redirectToPlayer(ch.iframeUrl)" (click)="redirectToPlayer(ch.iframeUrl)"  *ngFor="let ch of channels" >
+      <ion-card tabindex="0" *ngFor="let ch of channels; let i = index"  (keyup.enter)="redirectToPlayer(ch.iframeUrl)" 
+      (keydown)="move($event, i)"
+      (click)="redirectToPlayer(ch.iframeUrl)"
+      id="channel_{{i}}"  >
         <img alt="" src={{ch.logo}} />
         <ion-card-header>
           <ion-card-title>{{ch.name}}</ion-card-title>
