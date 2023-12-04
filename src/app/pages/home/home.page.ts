@@ -25,7 +25,7 @@ export class HomePage {
    move(ev: any, index: number) {
     switch (ev.code) {
       case "ArrowDown":
-        let newIndex = index + 5;
+        let newIndex = index + 4;
         let element = document.getElementById("channel_" + newIndex);
 
         if (element) {
@@ -35,7 +35,7 @@ export class HomePage {
         break;
       case "ArrowUp":
         if (index > 0) {
-          let newIndex =  index - 5;
+          let newIndex =  index - 4;
           if(newIndex < 0){
             return;
           }

@@ -14,7 +14,7 @@
   }
 
   .channelList {
-    grid-template-columns: repeat(auto-fit, minmax(225px, 0fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0fr));
     display: grid;
     margin: 10px;
 
@@ -40,8 +40,8 @@
       }
 
       img {
-        width: 60%;
-        font-size: 1.10rem;
+        width: fit-content;
+        height: 120px;
       }
 
       ion-card-title {

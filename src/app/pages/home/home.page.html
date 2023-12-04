@@ -2,7 +2,6 @@
 
   <div class="main">
     <button class="addChannel" *ngIf="isLocalDev">Añadir canal</button>
-    <br><br>
     <div class="channelList">
       <ion-card tabindex="0" *ngFor="let ch of channels; let i = index"  (keyup.enter)="redirectToPlayer(ch.iframeUrl)" 
       (keydown)="move($event, i)"

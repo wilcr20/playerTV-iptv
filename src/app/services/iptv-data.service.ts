@@ -471,24 +471,7 @@ export class IptvDataService {
         "m3u8": "https://5d8d85cf2c308.streamlock.net:1936/CanalcostaTV/endirecto/playlist.m3u8",
         "iframeUrl": "https://player.livepush.io/emvOunYiDduUF",
         "category": Category.general
-      },
-      {
-        "name": "",
-        "logo": "",
-        "m3u8": "",
-        "iframeUrl": "",
-        "category": Category
-      },
-      {
-        "name": "",
-        "logo": "",
-        "m3u8": "",
-        "iframeUrl": "",
-        "category": Category
-      },   
-
-
-      
+      }    
 
     ]
   }
